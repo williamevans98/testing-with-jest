@@ -1,0 +1,22 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "testing with jest lab",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamevans98/testing-with-jest.git"
+  },
+  "author": "William Evans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/williamevans98/testing-with-jest/issues"
+  },
+  "homepage": "https://github.com/williamevans98/testing-with-jest#readme"
+}
