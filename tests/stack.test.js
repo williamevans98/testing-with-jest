@@ -22,8 +22,6 @@ test('Push two elements to stack, pop one and return the top element', () => {
     stack.push("First item");
     stack.push("Second item");
     stack.pop();
-    // Failar eftersom det borde vara defined, inte Undefined
-    expect(stack.peek()).toBeUndefined();
-    // Failar eftersom det ska vara toBe("First item")
-    expect(stack.peek()).toBe("Second item");
+    expect(stack.peek()).toBeDefined();
+    expect(stack.peek()).toBe("First item");
 });
