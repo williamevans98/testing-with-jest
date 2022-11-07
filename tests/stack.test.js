@@ -17,3 +17,13 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBeDefined();
     expect(stack.peek()).toBe(42);
 });
+
+test('Push two elements to stack, pop one and return the top element', () => {
+    stack.push("First item");
+    stack.push("Second item");
+    stack.pop();
+    // Failar eftersom det borde vara defined, inte Undefined
+    expect(stack.peek()).toBeUndefined();
+    // Failar eftersom det ska vara toBe("First item")
+    expect(stack.peek()).toBe("Second item");
+});
